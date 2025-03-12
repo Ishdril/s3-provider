@@ -51,7 +51,9 @@ variable "s3_name" {
 }
 
 output "s3_policy" {
-  id = aws_s3_bucket.s3.id
-  arn = aws_s3_bucket.s3.arn
-  policy = aws_s3_bucket_policy.allow_access_from_another_account.policy
+  value = {
+    id = aws_s3_bucket.s3.id
+    arn = aws_s3_bucket.s3.arn
+    policy = aws_s3_bucket_policy.allow_access_from_another_account.policy
+  }
 }
