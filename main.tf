@@ -52,6 +52,6 @@ output "s3_policy" {
   value = {
     id = aws_s3_bucket.s3.id
     arn = aws_s3_bucket.s3.arn
-    policy = aws_s3_bucket_policy.allow_access_from_another_account.policy
+    policy = "${aws_s3_bucket_policy.allow_access_from_another_account.policy}"
   }
 }
