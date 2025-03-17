@@ -63,7 +63,7 @@ resource "aws_iam_policy" "policy" {
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
-  policy = {
+  policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
       {
@@ -74,5 +74,5 @@ resource "aws_iam_policy" "policy" {
         Resource = "*"
       },
     ]
-  }
+  })
 }
