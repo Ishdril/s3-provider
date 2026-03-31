@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <rect width="320" height="80" rx="8" fill="#1a1a2e"/>
+  <text x="16" y="36" font-family="system-ui,sans-serif" font-size="16" fill="#eaeaea">tf-module README image test</text>
+  <text x="16" y="60" font-family="system-ui,sans-serif" font-size="13" fill="#4cc2c0">COMMITTED FILE: docs/readme-images/local-test.svg</text>
+</svg>
